@@ -5,6 +5,9 @@
  */
 package cj.arraywithpersonobject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Christopher
@@ -12,12 +15,12 @@ package cj.arraywithpersonobject;
 public class ObjectArray {
     
     public static void main(String[] args) {
-        Student[] students = new Student[4];
+        List<Student> students = new ArrayList<Student>();
         
-        students[0]= new Student(576410, "Christopher");
-        students[1]= new Student(576411, "Gustaf");
-        students[2]= new Student(576405, "Maxwell");
-        students[3]= new Student(576370, "Troy");
+        students.add(new Student(576410, "Christopher"));
+        students.add(new Student(576411, "Gustaf"));
+        students.add(new Student(576405, "Maxwell"));
+        students.add(new Student(576370, "Troy"));
         
         System.out.println("Student num\tStudent Name");
         for (Student student : students) {
